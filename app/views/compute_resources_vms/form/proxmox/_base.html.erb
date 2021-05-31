@@ -16,7 +16,6 @@ You should have received a copy of the GNU General Public License
 along with ForemanFogProxmox. If not, see <http://www.gnu.org/licenses/>. %>
 
 <%= javascript_include_tag 'foreman_fog_proxmox/proxmox_vm', "data-turbolinks-track" => true %>
-<%= javascript_tag("$(document).on('ContentLoad', tfm.numFields.initAll)"); %>
 
 <%= select_f f, :type, proxmox_types_map, :id, :name, { }, :label => _('Type'), :label_size => "col-md-2", :required => true, :onchange => "vmTypeSelected()", :disabled => !new_vm %>
 

@@ -15,7 +15,6 @@
 // You should have received a copy of the GNU General Public License
 // along with ForemanFogProxmox. If not, see <http://www.gnu.org/licenses/>.
 
-$(document).on('ContentLoad', tfm.numFields.initAll);
 $(document).ready(vmTypeSelected);
 
 function vmTypeSelected() {

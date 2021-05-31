@@ -21,5 +21,4 @@ function cloudinitControllerSelected(item) {
   var max = computeControllerMaxDevice(controller);
   var device_selector = 'host_compute_attributes_volumes_attributes_' + index + 'device';
   $(device_selector).attr('data-soft-max', max);
-  tfm.numFields.initAll();
 }

@@ -46,7 +46,6 @@ function controllerSelected(item) {
   var device = $(device_selector).limitedSpinner('value');
   var id = controller + device;
   $(id_selector).val(id);
-  tfm.numFields.initAll();
 }
 
 function deviceSelected(item) {
@@ -58,7 +57,6 @@ function deviceSelected(item) {
   var controller = $(controller_selector).val();
   var id = controller + device;
   $(id_selector).val(id);
-  tfm.numFields.initAll();
 }
 
 function computeControllerMaxDevice(controller) {

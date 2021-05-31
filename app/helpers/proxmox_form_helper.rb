@@ -66,7 +66,7 @@ module ProxmoxFormHelper
     opts[:"data-association"] = (type + '_' + association.to_s).to_sym
     hide = ''
     hide += '$("[data-association=' + type + '_volumes]").hide();' unless ['hard_disk', 'mp'].include?(type)
-    link_to_function(name.to_s, 'add_child_node(this);tfm.numFields.initAll();' + hide, opts)
+    link_to_function(name.to_s, 'add_child_node(this);' + hide, opts)
   end
 
   def remove_child_link_typed(name, f, type, opts = {})
